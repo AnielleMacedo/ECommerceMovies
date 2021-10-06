@@ -13,5 +13,11 @@ namespace ECommerceMovies.Models
         public string Logo { get; set; }
         public string Nome { get; set; }
         public string Descrizione { get; set; }
+
+        //Relationship : um cinema pode ter N filmes/ lista de filmes
+        public List<Film> Filmes { get; set; }
+
+       //
+
     }
 }

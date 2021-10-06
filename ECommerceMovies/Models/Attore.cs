@@ -14,5 +14,8 @@ namespace ECommerceMovies.Models
         public string ProfiloFotoURL { get; set; }
         public string Bio { get; set; }
 
+        //relationship
+        public List<Attore_Film> Attori_Films { get; set; }
+
     }
 }

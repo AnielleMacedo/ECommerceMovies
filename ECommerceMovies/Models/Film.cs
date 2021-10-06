@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -20,5 +21,18 @@ namespace ECommerceMovies.Models
 
         //crio um Enum para a categoriia na pasta /Data/FilmCategoria
         public FilmCategoria FilmCategoria { get; set; }
+
+        //relationship
+        public List<Attore_Film> Attori_Films { get; set; }
+
+        //relacao con cinema
+        public int CinemaId { get; set; }
+        [ForeignKey("CinemaId")]
+        public Cinema Cinema { get; set; }
+
+        //relacao con Produttore
+        public int ProduttoreId { get; set; }
+        [ForeignKey("ProduttoreId")]
+        public Produttore Produttore { get; set; }
     }
 }

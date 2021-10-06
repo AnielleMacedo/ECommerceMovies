@@ -13,5 +13,9 @@ namespace ECommerceMovies.Models
         public string NomeCompleto { get; set; }
         public string ProfiloFotoURL { get; set; }
         public string Bio { get; set; }
+
+        //Relationship : uma produtora pode prduzir N filmes
+        public List<Film> Filmes { get; set; }
+
     }
 }

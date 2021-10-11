@@ -30,7 +30,7 @@ namespace ECommerceMovies.Data
             base.OnModelCreating(modelBuilder);
         }
 
-        //agora vamos efinir o nome das tabelas para cada modelo
+        //agora vamos definir o nome das tabelas para cada modelo
         public DbSet<Attore> Attori { get; set; }
         public DbSet<Film> Films { get; set; }
         public DbSet<Attore_Film> Attori_Films { get; set; }
